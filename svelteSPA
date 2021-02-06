@@ -1,0 +1,10 @@
+server{
+    server_name admin.wynwoodstore.net;
+    root /var/www/DashboardEcomerc/public;
+    index index.html index.htm index.nginx-debian.html;
+    location / {
+         try_files $uri $uri/ =404;
+    }
+}
+
+//ojo hay que mudar el proyecto a la carpeta /var/www/
